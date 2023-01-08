@@ -10,7 +10,7 @@
  
  1. @State값이 변경 되었을때 화면에 보여줘야 할때
  2. @Binding : state 같은 녀석들을 화면간에 공유해야 할땨 좁은 영역
- 3. @EnvironmentObject : ViewModel을 지정하고 화위뷰에 모두 공유해야 할 때
+ 3. @EnvironmentObject : ViewModel을 지정하고 화위뷰에 모두 공유해야 할 때, viewModel의 Publicher를 다른 뷰들에게 onREcevie로 공유하고 싶을 때.
  */
 import SwiftUI
 
