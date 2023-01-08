@@ -53,7 +53,7 @@ struct ContentView: View {
                     .tabItem { Label("WJ", systemImage: "pencil.circle")}
             } //TabView
             .overlay(Text(appTitle).offset(y: -(UIScreen.main.bounds.height * 0.4)))
-        //Publisher로 들어오는 데이타를 감지해서 액션을 취한다.
+        //Publisher로 들어오는 데이타를 감지해서 액션을 취한다. appTitle은 State이므로 view를 다시 그린다.
             .onReceive(viewModel.$appTitle, perform: { receivedAppTitle in
                 print("ContentView receivedAppTitle :", receivedAppTitle)
                 appTitle = receivedAppTitle
